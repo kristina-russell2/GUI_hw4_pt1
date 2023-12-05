@@ -1,0 +1,39 @@
+<!-- Created by Kristina Russell - 12/4/2023 - kristina_russell@student.uml.edu -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Table</title>
+    <meta charset="utf-8">
+    <link href="assets/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="assets/scriptQuery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header>
+                <h1>Dynamic Table</h1>
+            </header>
+            <div class="column1">
+                <div id="rangeForm">
+                    <p>Please enter ranges between -50 to 50 for the multiplication table</p>
+                    <form id="ColRowForm">
+                        Minimum Column Value:<br> <input type="number" name="MinCol" id="MinCol"><br>
+                        Maxiumum Column Value:<br> <input type="number" name="MaxCol" id="MaxCol"><br>
+                        Minimum Row Value:<br> <input type="number" name="MinRow" id="MinRow"><br>
+                        Maximum Row Value:<br> <input type="number" name="MaxRow" id="MaxRow"><br><br>
+                        <!--<button onclick="useForm()">Submit</button> --> 
+                        <input type="button" value="Submit" id="submitForm">
+                    </form>
+                </div>
+            </div>
+            <div id="column2">
+                <table id="table" rules="all"></table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
